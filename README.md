@@ -44,35 +44,7 @@ Ref Clock ──► PFD ──► Charge Pump ──► Loop Filter ──► VC
 | Loop Filter (LPF) | 🔄 In Progress |
 | Frequency Synthesizer / Divider | 🔄 In Progress |
 
----
 
-## Schematics
-
-### Phase Frequency Detector (PFD)
-![PFD Schematic](schematics/PFD.png)
-
-The PFD compares the phase and frequency of the reference clock against the feedback signal, generating UP and DOWN pulses to drive the charge pump.
-
-### Voltage Controlled Oscillator (VCO)
-![VCO Schematic](schematics/VCO.png)
-
-A 3-stage ring oscillator VCO whose output frequency is controlled by the input control voltage (Vctrl).
-
----
-
-## Simulation Results
-
-### 3-Stage Ring VCO Output
-![VCO Simulation](simulations/3_stage_VCO.jpg)
-
-Transient simulation of the 3-stage ring oscillator showing oscillation waveform. Output frequency varies with control voltage.
-
-### PFD Simulation
-![PFD Simulation](simulations/PFD.jpg)
-
-Transient simulation of the PFD showing UP and DOWN pulse generation in response to phase difference between reference and feedback signals.
-
----
 
 ## Design Notes
 
